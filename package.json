@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "sucrase ./src -d ./dist --transforms import",
-    "start": "node -r dotenv/config ./dist/index.js",
-    "dev": "nodemon --inspect src/index.js"
+    "dev": "nodemon --inspect src/index.js",
+    "build": "sucrase ./src -d ./dist --transforms imports ",
+    "start": "node -r dotenv/config ./dist/index.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
